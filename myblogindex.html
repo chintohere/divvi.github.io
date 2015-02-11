@@ -1,20 +1,23 @@
-<!doctype html>
+<html ng-app="myblog">
 <head>
 <title> my blog</title>
 <link href="myblogstyle.css" rel="stylesheet" >
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+
+<script type="text/javascript" src="assets/js/angular.js"></script>
+<script type="text/javascript" src="assets/js/angular-route.js"></script>
 <script src="contacts.js"></script>
 </head>
 
-<body >
+<body>
 <header>
-<img src="mypic.png" height=250 width=250>
+<img src="mypic.png" height="250" width="250">
 <h1>Divya's Blog</h1>
 <ul>
 <li><a href="#">About Me</a></li>
 <li> <a href="#">My Resume</a></li>
-<li><a href="#" id="contactinfo">Contact Me</a></li>
+<li><a href="#/contactme" id="contactinfo">Contact Me</a></li>
 </ul>
 </header>
 <div>
@@ -23,7 +26,7 @@ This is Divya, an IT graduate and an aspiring Front end Developer based in Sydne
 This is my portfolio.
 </article>
 </div>
-<div id="contacts"></div>
+<div style="border:1px red solid; width:600px;height:400px" ng-view></div>
 </body>
 
 </html>
