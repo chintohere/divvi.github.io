@@ -28,11 +28,7 @@ contactsApp.config(function($routeProvider){
             controller: 'HomePageCtrl'
           }).
 when('/contactme', {
-<<<<<<< HEAD
 templateUrl:'contactme.html',
-=======
-template:'<h1>Test</h1>',
->>>>>>> FETCH_HEAD
 controller:'ContactDetailsController',
 }).
 otherwise({
@@ -49,8 +45,5 @@ contactsApp.controller('ContactDetailsController',function(){
 });
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> FETCH_HEAD
 
